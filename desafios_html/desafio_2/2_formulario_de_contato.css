@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+label#subject_label{
+    display: initial;
+}
+
+label#news_label {
+    display: initial;
+    font-weight: initial;
+}
+
+input, textarea {
+    display: block;
+    width: 245px;
+    margin-bottom: 16px;
+}
+
+select {
+    margin-bottom: 16px;
+}
+
+input[type='checkbox'] {
+    display: initial;
+    width: initial;
+}
+
+button {
+    display: block;
+    margin-top: 6px;
+}
