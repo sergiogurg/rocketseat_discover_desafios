@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Gurgel">
+    <meta name="description" content="Esse é o 2º (segundo) desafio de HTML puro da RocketSeat Discover.">
+    <title>Desafio HTML nº 2: Formulário de Contato</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1486/1486433.png" type="image/x-icon">
+    <link rel="stylesheet" href="2_formulario_de_contato.css">
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Entre em contato</legend>
+
+            <label for="subject">Assunto:</label>
+            <select id="subject">
+                <option>Selecione um assunto</option>
+                <option value="sales">Vendas</option>
+                <option value="support">Suporte</option>
+                <option value="finance">Financeiro</option>
+                <option value="other">Outros</option>
+            </select>
+
+            <label for="user_name">Nome Completo:</label>
+            <input type="text" id="user_name">
+
+            <label for="user_email">E-mail:</label>
+            <input type="email" id="user_email">
+
+            <label for="user_message">Mensagem:</label>
+            <textarea id="user_message" cols="30" rows="10"></textarea>
+
+            <input type="checkbox" id="news_sent_by_email">
+            <label for="news_sent_by_email">Aceito receber novidades por e-mail</label>
+
+            <button type="submit">Enviar</button>
+        </fieldset> 
+    </form>
+</body>
+</html>
