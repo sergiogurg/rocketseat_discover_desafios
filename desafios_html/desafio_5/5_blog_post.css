@@ -1,0 +1,23 @@
+* {
+    margin-left: 2px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 4px;
+}
+
+img#post_img {
+    width: 400px;
+}
+
+img#profile_img {
+    width: 200px;
+}
