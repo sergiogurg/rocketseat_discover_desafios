@@ -1,0 +1,86 @@
+:root {
+    --body-color: #fde8cd;
+    --main-color: white;
+    --shw-color: rgba(128, 128, 128, 0.626);
+    --bdr-color: rgb(215, 215, 215);
+    --sml-font-color: gray;
+    --link-color: #90652E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--body-color);
+}
+
+main {
+    background-color: var(--main-color);
+    width: 75vw;
+    max-width: 550px;
+    margin: 32px auto;
+    border: var(--bdr-color) solid 1px;
+    border-radius: 10px;
+    box-shadow: var(--shw-color) 1px 1px 5px;
+
+    padding: 48px 16px 16px 16px;
+    font-size: 14px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+h2 {
+    margin-top: 24px;
+}
+
+img {
+    width: 0;
+}
+
+div.img-container {
+    height: 150px;
+
+    background-image: url(waffle-image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 10px;
+
+    margin-bottom: 6px;
+}
+
+figcaption {
+    text-align: end;
+    font-size: 12px;
+    color: var(--sml-font-color);
+}
+
+ul, ol {
+    margin-left: 16px;
+}
+
+li {
+    margin: 12px 0;
+}
+
+footer p {
+    font-size: 12px;
+    text-align: center;
+    color: var(--sml-font-color);
+
+    margin-bottom: 12px;
+}
+
+footer a {
+    font-weight: 900;
+    color: var(--link-color);
+    text-decoration: none;
+}
