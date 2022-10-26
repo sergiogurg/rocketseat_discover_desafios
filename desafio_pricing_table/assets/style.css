@@ -175,3 +175,22 @@ section.card:nth-child(2) header p.card-tag {
     font-size: 12;
     font-weight: 600;
 }
+
+/* Transitions */
+
+section.card {
+    transition-duration: 0.5s;
+}
+
+section.card:hover {
+    scale: 1.05;
+}
+
+section.card a {
+    transition-duration: 0.5s;
+}
+
+section.card a:hover {
+    background-color: var(--blue);
+    color: white;
+}
