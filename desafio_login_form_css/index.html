@@ -27,19 +27,22 @@
                 <p>Entre com suas informações de cadastro.</p>
             </header>
             <form action="#" method="post">
-                <label for="">E-mail</label>
+                <label for="user_email">E-mail</label>
                 <div class="email-input-container">
                     <img src="assets/mail.svg" alt="Ícone de e-mail (envelope)">
-                    <input type="email" name="" id="">
+                    <input type="email" name="form_email" id="user_email">
                 </div>
-                <label for="">Senha</label>
+                <label for="user_password">Senha</label>
                 <div class="password-input-container">
                     <img src="assets/lock.svg" alt="Ícone de senha (cadeado)">
-                    <input type="password" name="" id="">
-                    <img src="assets/eye.svg" alt="">
+                    <input type="password" name="form_password" id="user_password">
+                    <img src="assets/eye.svg" alt="Ícone de visibilidade de senha (olho)">
                 </div>
                 <div class="checkbox-link-container">
-                    <input type="checkbox" name="" id="">
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="form_remember" id="user_remember">
+                        <label for="user_remember">Lembre-me</label>
+                    </div>
                     <a href="#">Esqueci minha senha</a>
                 </div>
                 <button type="submit">Entrar</button>
