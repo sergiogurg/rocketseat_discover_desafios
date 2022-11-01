@@ -1,0 +1,27 @@
+.checkbox-container input#check {
+    opacity: 0;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container input#check + label::before {
+    content: '';
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    border: black solid 1px;
+    border-radius: 6px;
+    margin-right: 10px;
+    vertical-align: -5px;
+}
+
+.checkbox-container input#check:checked + label:before {
+    background-color: yellow;
+    background-image: url(tick-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
