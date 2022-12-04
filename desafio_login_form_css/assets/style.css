@@ -128,6 +128,7 @@ form div.checkbox-link-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
 }
 
 form div.checkbox-container {
@@ -171,6 +172,10 @@ button {
     text-transform: uppercase;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 /* Estilização de foco */
 
 form div.email-input-container img {
@@ -199,4 +204,41 @@ form div.password-input-container:focus-within {
     background-image: url(lock-focus.svg);
     border: var(--primary-color) solid 1px;
     outline: var(--primary-color) solid 2px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1136px) {
+    div.background-image {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    main header,
+    main section {
+        max-width: 375px;
+        width: 100%;
+    }
+
+    main > header {
+        margin: 0;
+        padding: 40px 20px 0 20px;
+    }
+
+    main section {
+        background-color: initial;
+        margin: 0;
+        padding: 0 20px 0 20px;
+    }
+
+    main section form .email-input-container input,
+    main section form .password-input-container input {
+        background-color: initial;
+    }
 }
